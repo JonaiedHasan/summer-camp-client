@@ -4,7 +4,8 @@ import { FaBook, FaCalendarAlt, FaHome, FaShoppingCart, FaUsers, FaUtensils, FaW
 import { NavLink, Outlet } from 'react-router-dom';
 
 const DashBoard = () => {
-    const isAdmin = false;
+    const isAdmin = true;
+    const isInstructors = false;
     // const isUser = user;
     return (
 
@@ -31,12 +32,57 @@ const DashBoard = () => {
 
           } */}
 
+                    {/* {
+                isAdmin ?( <></>) : (isInstructor ? (<></>) : (<></>))
+               } */}
+
+                    {/* {
+                    isAdmin ? <>
+                    
+                    </> : <>
+                    isInstructor ? <>
+                    
+                    </> : <>
+                    
+                    </></>
+                 }   
+                 {
+      isAdmin ? <> </> : isInstructor ? <> </> : <></>
+                 }    */}
+
+
+                    {/* {
+                    if (isAdmin) {
+                        
+                    }
+                    if (isInstructor) {
+                        
+                    }
+                    else{
+
+                    }
+                } */}
 
                     {
                         isAdmin ? <>
+                            <li><NavLink to='/dashboard/manageclass'>Manage Classes</NavLink></li>
+                            <li><NavLink to='/dashboard/manageUsers'>Manage Users</NavLink></li>
+                        </> : isInstructors ? <>
+                            <li><NavLink to='/dashboard/manageclass'>Add a Class</NavLink></li>
+                            <li><NavLink to='/dashboard/manageUser'>My Classes</NavLink></li>
+                        </> : <>
+                            <li><NavLink to='/dashboard/selectedClass'>  <FaCalendarAlt></FaCalendarAlt> My Selected Classes</NavLink></li>
+                            <li><NavLink to='/dashboard/home'>  <FaShoppingCart></FaShoppingCart>My Enrolled Classes</NavLink></li>
+                            <li><NavLink to='/dashboard/history'>  <FaWallet></FaWallet> Payment History</NavLink></li>
+                        </>
+                    }
 
-                         <li><NavLink to='/dashboard/manageclass'>Manage Classes</NavLink></li>
-                         <li><NavLink to='/dashboard/manageUser'>Manage Users</NavLink></li>
+
+                    {/* {
+                        isAdmin ? <>
+
+                            <li><NavLink to='/dashboard/manageclass'>Manage Classes</NavLink></li>
+                            <li><NavLink to='/dashboard/manageUser'>Manage Users</NavLink></li>
                         </> : <>
                             <li><NavLink to='/dashboard/selectedClass'>  <FaCalendarAlt></FaCalendarAlt> My Selected Classes</NavLink></li>
                             <li><NavLink to='/dashboard/home'>  <FaShoppingCart></FaShoppingCart>My Enrolled Classes</NavLink></li>
@@ -45,7 +91,7 @@ const DashBoard = () => {
 
 
                         </>
-                    }
+                    } */}
 
 
                     <div className="divider"></div>

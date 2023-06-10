@@ -10,6 +10,7 @@ import MySelectedClass from "../Pages/DashBorad/Users/MySelectedClass";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import PrivateRouter from "./PrivateRouter";
+import ManageUsers from "../Pages/DashBorad/Users/Admin/ManageUsers";
 
 
 
@@ -46,6 +47,10 @@ import PrivateRouter from "./PrivateRouter";
         {
           path:'selectedClass',
           element:<MySelectedClass></MySelectedClass>
+        },
+        {
+          path:'manageUsers',
+          element:<ManageUsers></ManageUsers>
         }
       ]
     }
