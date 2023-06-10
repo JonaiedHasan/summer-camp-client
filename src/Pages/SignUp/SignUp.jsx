@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { Helmet } from 'react-helmet-async';
 import { AuthContext } from '../../Providers/AuthProviders';
 import Swal from 'sweetalert2';
-// import SocialLogin from '../Shared/SocialLogin';
+import SocialLogin from '../../Shared/SocialLogIn';
 
 
 
@@ -112,7 +112,7 @@ const SignUp = () => {
                             </div>
                         </form>
                         <p> <small>Already have an account? <Link to={'/login'}> Please Login</Link></small></p>
-                        {/* <SocialLogin></SocialLogin> */}
+                        <SocialLogin></SocialLogin>
                     </div>
                 </div>
             </div>

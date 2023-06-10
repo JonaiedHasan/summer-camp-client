@@ -168,8 +168,8 @@ const Navbar = () => {
                             <NavLink to="/login">
                                 <button className="btn-outlined">Log In</button>
                             </NavLink>
-                            <NavLink to="/register">
-                                <button className="btn-outlined">Register</button>
+                            <NavLink to="/signup">
+                                <button className="btn-outlined">Sign Up</button>
                             </NavLink>
                         </>
                     )}
