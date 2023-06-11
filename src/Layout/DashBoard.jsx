@@ -2,9 +2,11 @@
 import React from 'react';
 import { FaBook, FaCalendarAlt, FaHome, FaShoppingCart, FaUsers, FaUtensils, FaWallet } from 'react-icons/fa';
 import { NavLink, Outlet } from 'react-router-dom';
+import useAdmin from '../Hooks/useAdmin';
 
 const DashBoard = () => {
-    const isAdmin = true;
+    // const isAdmin = true;
+    const [isAdmin] = useAdmin();
     const isInstructors = false;
     // const isUser = user;
     return (
@@ -65,11 +67,11 @@ const DashBoard = () => {
 
                     {
                         isAdmin ? <>
-                            <li><NavLink to='/dashboard/manageclass'>Manage Classes</NavLink></li>
+                            <li><NavLink to='/dashboard/manageClasses'>Manage Classes</NavLink></li>
                             <li><NavLink to='/dashboard/manageUsers'>Manage Users</NavLink></li>
                         </> : isInstructors ? <>
-                            <li><NavLink to='/dashboard/manageclass'>Add a Class</NavLink></li>
-                            <li><NavLink to='/dashboard/manageUser'>My Classes</NavLink></li>
+                            <li><NavLink to='/dashboard/addClass'>Add a Class</NavLink></li>
+                            <li><NavLink to='/dashboard/myClasses'>My Classes</NavLink></li>
                         </> : <>
                             <li><NavLink to='/dashboard/selectedClass'>  <FaCalendarAlt></FaCalendarAlt> My Selected Classes</NavLink></li>
                             <li><NavLink to='/dashboard/home'>  <FaShoppingCart></FaShoppingCart>My Enrolled Classes</NavLink></li>

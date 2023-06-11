@@ -12,15 +12,15 @@
   }
 
   .text-color {
-    @apply bg-gradient-to-r from-pink-700 via-pink-400 to-pink-600 text-transparent bg-clip-text;
+    @apply bg-gradient-to-r from-blue-500 via-pink-300 to-pink-600 text-transparent bg-clip-text;
   }
 
   
 .btn-primary {
-    @apply font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-xl   text-cyan-100 hover:bg-indigo-400 bg-gradient-to-r from-pink-800 via-pink-500 to-pink-800 inline-block;
+    @apply font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-xl   text-cyan-100 hover:bg-indigo-400 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 inline-block;
   }
   .btn-outlined {
-    @apply font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-sm rounded-xl  text-white bg-pink-600 hover:bg-pink-700 hover:border-transparent border-2 border-orange-600 ;
+    @apply font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-sm rounded-xl  text-white bg-blue-600 hover:bg-blue-700 hover:border-transparent border-2 border-blue-600 ;
   }
 
   .error {
