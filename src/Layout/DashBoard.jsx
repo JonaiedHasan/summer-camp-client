@@ -3,12 +3,16 @@ import React from 'react';
 import { FaBook, FaCalendarAlt, FaHome, FaShoppingCart, FaUsers, FaUtensils, FaWallet } from 'react-icons/fa';
 import { NavLink, Outlet } from 'react-router-dom';
 import useAdmin from '../Hooks/useAdmin';
+import useInstructor from '../Hooks/useInstructor';
+import Instructors from '../Pages/Instructors/Instructors';
 
 const DashBoard = () => {
     // const isAdmin = true;
     const [isAdmin] = useAdmin();
-    const isInstructors = false;
+    // const isInstructors = false;
+    const [isInstructor] = useInstructor();
     // const isUser = user;
+    console.log( 'Instructors', isInstructor, 'admin', isAdmin);
     return (
 
         <div className="drawer lg:drawer-open">
@@ -69,7 +73,7 @@ const DashBoard = () => {
                         isAdmin ? <>
                             <li><NavLink to='/dashboard/manageClasses'>Manage Classes</NavLink></li>
                             <li><NavLink to='/dashboard/manageUsers'>Manage Users</NavLink></li>
-                        </> : isInstructors ? <>
+                        </> : isInstructor ? <>
                             <li><NavLink to='/dashboard/addClass'>Add a Class</NavLink></li>
                             <li><NavLink to='/dashboard/myClasses'>My Classes</NavLink></li>
                         </> : <>
