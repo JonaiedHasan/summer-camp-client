@@ -103,7 +103,7 @@ const ManageUsers = () => {
     
 
     return (
-        <div>
+        <div className='w-full'>
             <Helmet>
                 <title>Elit | All Users </title>
             </Helmet>

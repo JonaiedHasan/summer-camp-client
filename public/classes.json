@@ -1,6 +1,7 @@
 [
     {
-        "id": "01",
+       "email": "john.doe@example.com",
+        "status":"Approved",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs3w7Sop2s7X0DmzZud6AILOeD0YwdX2y5qw&usqp=CAU",
         "name": "Football",
         "instructorName": "John Smith",
@@ -9,7 +10,8 @@
         "totalStudents": 24
     },
     {
-        "id": "02",
+       "email": "alivo@example.com",
+        "status":"Approved",
         "image": "https://st2.depositphotos.com/3539679/6969/v/950/depositphotos_69695905-stock-illustration-basketball-backboard-and-ball-isolated.jpg",
         "name": "Basketball",
         "instructorName": "Emily Johnson",
@@ -18,7 +20,8 @@
         "totalStudents": 18
     },
     {
-        "id": "03",
+       "email": "makela@example.com",
+        "status":"Approved",
         "image": "https://p.turbosquid.com/ts-thumb/Pa/KrihkZ/ih/00/jpg/1626711757/1920x1080/fit_q87/b2a79572d1b8eab1677576e53722c4704bc8ea96/00.jpg",
         "name": "Table Tennis",
         "instructorName": "Michael Davis",
@@ -27,7 +30,8 @@
         "totalStudents": 17
     },
     {
-        "id": "04",
+       "email": "salio@example.com",
+        "status":"Approved",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhg9hga_3a2S4qU1mkIIh2mK0NRv66ggDhYg&usqp=CAU",
         "name": "Swimming",
         "instructorName": "Sarah Thompson",
@@ -36,7 +40,8 @@
         "totalStudents": 16
     },
     {
-        "id": "5",
+       "email": "meneju@example.com",
+        "status":"Approved",
         "image": "https://image1.masterfile.com/getImage/NjMyLTAxMTQ1MDU2ZW4uMDAwMDAwMDA=ALvq5J/632-01145056en_Masterfile.jpg",
         "name": "Gymnastics",
         "instructorName": "Robert Wilson",
@@ -45,7 +50,8 @@
         "totalStudents": 7
     },
     {
-        "id": "06",
+       "email": "yeahabibi@example.com",
+        "status":"Approved",
         "image": "https://t4.ftcdn.net/jpg/05/19/21/35/240_F_519213505_D4HIkDmogMaIvsZnKClO2Tv8FYLCpq6a.jpg",
         "name": "Volleyball",
         "instructorName": "Jessica Anderson",
@@ -54,7 +60,8 @@
         "totalStudents": 14
     },
     {
-        "id": "07",
+       "email": "samanta@example.com",
+        "status":"Approved",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEAqk5HRetQX9ACgpkUVkQpwK-yxv6b82QUg&usqp=CAU",
         "name": "Baseball",
         "instructorName": "Andrew Roberts",
@@ -63,7 +70,8 @@
         "totalStudents": 8
     },
     {
-        "id": "08",
+       "email": "shonmen@example.com",
+        "status":"Approved",
         "image": "https://wallpaperset.com/w/full/0/7/b/239832.jpg",
         "name": "Cricket",
         "instructorName": "Olivia Martin",
@@ -72,7 +80,8 @@
         "totalStudents": 23
     },
     {
-        "id": "044",
+       "email": "isaha@example.com",
+        "status":"Approved",
         "image": "https://t3.ftcdn.net/jpg/00/55/90/98/360_F_55909855_J3gOz3c6tmLugrXA79lgTlw7oRs286tI.jpg",
         "name": "Badminton",
         "instructorName": "Daniel Brown",
@@ -81,7 +90,8 @@
         "totalStudents": 15
     },
     {
-        "id": "09",
+       "email": "manna@example.com",
+        "status":"Approved",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7yos5sZJCqoBtAw3ueuDH9qlGbed8eo9ZQu-m_PrVdMplC7VGlrycJBCTZdsrjmH_CR0&usqp=CAU",
         "name": "Tennis",
         "instructorName": "Sophia Thompson",
@@ -90,7 +100,8 @@
         "totalStudents": 11
     },
     {
-        "id": "10",
+       "email": "shisa@example.com",
+        "status":"Approved",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbOsMiU9qtbTsC22-CUubOtOakUfI8UJMMhbGCaNEuXAXNS6DkPKpg5w-SyFLc4fV-hCU&usqp=CAU",
         "name": "Athletics",
         "instructorName": "Liam Wilson",
@@ -99,7 +110,8 @@
         "totalStudents": 6
     },
     {
-        "id": "11",
+       "email": "ashato@example.com",
+        "status":"Approved",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQFA7PeKcv2Pv-T6itf4oh7WFAXnqrw0_LNvIBxRFWYtDqtEhlcO76EInjS04kVPKDA0k&usqp=CAU",
         "name": "Golf",
         "instructorName": "Ava Johnson",
@@ -108,7 +120,8 @@
         "totalStudents": 4
     },
     {
-        "id": "12",
+       "email": "etahne@example.com",
+        "status":"Approved",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0_rDoj1H8q7SzlhLDkWlNy6JqZVgpukpnrl4WlE5XCnWrlEsbVFZGBMSLD9-bPImQeBw&usqp=CAU",
         "name": "Hockey",
         "instructorName": "Ethan Davis",
@@ -117,7 +130,8 @@
         "totalStudents": 13
     },
     {
-        "id": "13",
+       "email": "john.doe@example.com",
+        "status":"Approved",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZOZgbq7G2EstgTH-I8Mxq2my5DOOY4m2SVw&usqp=CAU",
         "name": "Rugby",
         "instructorName": "Mia Wilson",
@@ -126,7 +140,8 @@
         "totalStudents": 6
     },
     {
-        "id": "014",
+       "email": "john.doe@example.com",
+        "status":"Approved",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZOZgbq7G2EstgTH-I8Mxq2my5DOOY4m2SVw&usqp=CAU",
         "name": "Cycling",
         "instructorName": "Noah Thompson",
@@ -135,7 +150,8 @@
         "totalStudents": 10
     },
     {
-        "id": "015",
+       "email": "john.doe@example.com",
+        "status":"Approved",
         "image": "https://media.istockphoto.com/id/1167081993/photo/man-and-woman-practicing-karate.jpg?s=170667a&w=0&k=20&c=ETIGAbzrlsqwU_9yXlVZ_TRY6Q6j4aBk62flpt_-_sc=",
         "name": "Karate",
         "instructorName": "Isabella Martin",
