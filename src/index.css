@@ -12,7 +12,7 @@
   }
 
   .text-color {
-    @apply bg-gradient-to-r from-blue-500 via-pink-300 to-pink-600 text-transparent bg-clip-text;
+    @apply bg-gradient-to-r from-blue-500 via-blue-400 to-pink-600 text-transparent bg-clip-text;
   }
 
   

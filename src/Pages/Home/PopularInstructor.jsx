@@ -14,11 +14,11 @@ const PopularInstructor = () => {
     }, [])
     console.log(instructor);
     return (
-        <div className='my-8'>
+        <div className='my-10'>
         <div>
-            <h1 className='text-3xl text-center font-bold my-4'>Our Popular Instructors</h1>
+            <h1 className='text-5xl my-10 text-center font-bold text-color'>Our Popular Instructors</h1>
         </div>
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 gap-x-4 mx-4'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 gap-x-4 mx-4 mt-8'>
             {
                 instructor.slice(0,6).map(item => <PopularInstructorCard key={item._id}
                 item={item}></PopularInstructorCard>)

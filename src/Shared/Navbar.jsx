@@ -15,6 +15,9 @@ const Navbar = () => {
             });
     }
 
+
+    // const [isAdmin] = useAdmin();
+    // const [isInstructor] = useInstructor();
     // console.log(user);
 
     return (
@@ -82,7 +85,7 @@ const Navbar = () => {
                                     Dashboard
                                 </NavLink>
                             </li>
-                          
+
                         </ul>
                     </div>
                     <Link to="/" className="btn btn-ghost normal-case text-2xl">
@@ -116,7 +119,7 @@ const Navbar = () => {
                                     isActive ? "active" : "default"
                                 }
                             >
-                        Instructors
+                                Instructors
                             </NavLink>
                         </li>
                         <li>
@@ -129,18 +132,28 @@ const Navbar = () => {
                                 Classes
                             </NavLink>
                         </li>
-                      
-                        <li>
-                            <NavLink
-                                to="/dashboard/selectedClass"
-                                className={({ isActive }) =>
+
+                        <li><NavLink className={({ isActive }) =>
+                            isActive ? "active" : "default"
+                        } to='/dashboard/manageClasses'>DashBoard</NavLink></li>
+
+                        {/* {
+                             isAdmin ? <>
+                             <li><NavLink  className={({ isActive }) =>
                                     isActive ? "active" : "default"
-                                }
-                            >
-                          DashBoard
-                            </NavLink>
-                        </li>
-                      
+                                } to='/dashboard/manageClasses'>DashBoard</NavLink></li>
+                         </> : isInstructor ? <>
+                             <li><NavLink  className={({ isActive }) =>
+                                    isActive ? "active" : "default"
+                                } to='/dashboard/myClasses'>Dash Board</NavLink></li>
+                         </> : <>
+                             <li><NavLink  className={({ isActive }) =>
+                                    isActive ? "active" : "default"
+                                } to='/dashboard/selectedClass'>Dash Board</NavLink></li>
+                         </>
+                           }
+                     */}
+
                     </ul>
                 </div>
                 <div className="navbar-end flex sm:flex-col md:flex-row">

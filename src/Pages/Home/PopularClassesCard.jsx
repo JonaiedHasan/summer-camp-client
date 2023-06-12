@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 const PopularClassesCard = ({item}) => {
     const {image,name,price,availableSeats,instructorName
@@ -18,7 +19,10 @@ const PopularClassesCard = ({item}) => {
         <p>Available Seats : {availableSeats}</p>
 
     </div>
-    <button className='btn'>Select</button>
+    <Link to="/classes" >
+      
+    <button className='btn btn-block btn-primary'>Select</button>
+      </Link>
    
   </div>
 </div>

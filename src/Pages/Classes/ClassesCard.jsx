@@ -62,7 +62,7 @@ const ClassesCard = ({ item }) => {
                     <p>Available Seats : {availableSeats}</p>
 
                 </div>
-                <button onClick={()=> handleSelectCard(item)} className='btn'>Select</button>
+                <button onClick={()=> handleSelectCard(item)} className='btn btn-primary'>Select</button>
 
             </div>
         </div>
