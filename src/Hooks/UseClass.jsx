@@ -3,7 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 
 const UseClass = () => {
-    const { data: allClasses = [], isLoading: loading } = useQuery({
+    const { data: allClasses = [], isLoading: loading,refetch } = useQuery({
         queryKey: ['classes'],
         queryFn: async () => {
             const res = await fetch('http://localhost:5000/classes')
@@ -11,7 +11,7 @@ const UseClass = () => {
         }
     })
 
-    return [allClasses, loading]
+    return [allClasses, loading,refetch]
 };
 
 export default UseClass;
