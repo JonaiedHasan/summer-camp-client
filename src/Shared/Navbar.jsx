@@ -4,6 +4,8 @@ import { FaFootballBall } from 'react-icons/fa';
 
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProviders';
+import useAdmin from '../Hooks/useAdmin';
+import useInstructor from '../Hooks/useInstructor';
 const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext);
@@ -16,13 +18,13 @@ const Navbar = () => {
     }
 
 
-    // const [isAdmin] = useAdmin();
-    // const [isInstructor] = useInstructor();
+    const [isAdmin] = useAdmin();
+    const [isInstructor] = useInstructor();
     // console.log(user);
 
     return (
-        <div className="my-container">
-            <div className="navbar bg-base-100">
+        <div className="mt-0">
+            <div className="navbar bg-opacity-30 fixed z-10 bg-black text-white max-w-screen-xl px-14">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -43,7 +45,7 @@ const Navbar = () => {
                         </label>
                         <ul
                             tabIndex={0}
-                            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                            className="menu  menu-compact bg-slate-800 bg-opacity-50  dropdown-content mt-3 p-2 shadow rounded-box w-52"
                         >
                             <li>
                                 <NavLink
@@ -75,29 +77,33 @@ const Navbar = () => {
                                     Classes
                                 </NavLink>
                             </li>
-                            <li>
-                                <NavLink
-                                    to="/dashboard/selectedClass"
-                                    className={({ isActive }) =>
-                                        isActive ? "active" : "default"
-                                    }
-                                >
-                                    Dashboard
-                                </NavLink>
-                            </li>
+                           
+                        {
+                             isAdmin ? <>
+                             <li><NavLink  className={({ isActive }) =>
+                                    isActive ? "active" : "default"
+                                } to='/dashboard/manageClasses'>DashBoard</NavLink></li>
+                         </> : isInstructor ? <>
+                             <li><NavLink  className={({ isActive }) =>
+                                    isActive ? "active" : "default"
+                                } to='/dashboard/myClasses'>Dash Board</NavLink></li>
+                         </> : <>
+                             <li><NavLink  className={({ isActive }) =>
+                                    isActive ? "active" : "default"
+                                } to='/dashboard/selectedClass'>Dash Board</NavLink></li>
+                         </>
+                           }
 
                         </ul>
                     </div>
                     <Link to="/" className="btn btn-ghost normal-case text-2xl">
-                        <div className='w-36 flex'>
-                            <FaFootballBall></FaFootballBall>
-                            <FaFootballBall></FaFootballBall>
-                            <FaFootballBall></FaFootballBall>
-                            {/* <img className='rounded-full' src={'https://i.ibb.co/m6FGWNd/Capture.png'} alt="" /> */}
+                        <div className='w-24 flex items-center justify-center'>
+                            
+                            <img className='rounded-full' src={'https://i.ibb.co/wrdFJ6j/Cplsdjapture.png'} alt="" />
                         </div>
                         {" "}
 
-                        {/* <p className="text-color">Dreamland Dolls</p> {" "} */}
+                       
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -133,11 +139,11 @@ const Navbar = () => {
                             </NavLink>
                         </li>
 
-                        <li><NavLink className={({ isActive }) =>
+                        {/* <li><NavLink className={({ isActive }) =>
                             isActive ? "active" : "default"
-                        } to='/dashboard/manageClasses'>DashBoard</NavLink></li>
+                        } to='/dashboard/manageClasses'>DashBoard</NavLink></li> */}
 
-                        {/* {
+                        {
                              isAdmin ? <>
                              <li><NavLink  className={({ isActive }) =>
                                     isActive ? "active" : "default"
@@ -152,7 +158,7 @@ const Navbar = () => {
                                 } to='/dashboard/selectedClass'>Dash Board</NavLink></li>
                          </>
                            }
-                     */}
+                    
 
                     </ul>
                 </div>

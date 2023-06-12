@@ -3,6 +3,7 @@ import React from 'react';
 import Slider from './Slider';
 import PopularClasses from './PopularClasses';
 import PopularInstructor from './PopularInstructor';
+import ExtraSection from './ExtraSection';
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Slider></Slider>
             <PopularClasses></PopularClasses>
             <PopularInstructor></PopularInstructor>
+            <ExtraSection></ExtraSection>
         </div>
     );
 };

@@ -6,10 +6,7 @@ const Footer = () => {
     return (
         <footer className="footer p-10 bg-base-content text-white mb-0">
             <div className='w-52'>
-                {/* <img className='rounded-full' src={'https://i.ibb.co/m6FGWNd/Capture.png'} alt="" /> */}
-                <FaFootballBall></FaFootballBall>
-                <FaFootballBall></FaFootballBall>
-                <FaFootballBall></FaFootballBall>
+                <img className='rounded-full' src={'https://i.ibb.co/wrdFJ6j/Cplsdjapture.png'} alt="" />
                 <p className='font-semibold text-gray-600'>Dreamland Dolls Ltd.<br />
                 Mirpur , Dhaka ,Bangladesh
                 </p>

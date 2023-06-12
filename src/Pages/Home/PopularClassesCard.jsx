@@ -6,7 +6,7 @@ const PopularClassesCard = ({item}) => {
     const {image,name,price,availableSeats,instructorName
     } = item;
     return (
-        <div className="card mx-auto  w-[90%]  bg-base-100 shadow-xl">
+        <div className="card mx-auto my-2 w-[90%]  bg-base-100 shadow-xl">
   <figure><img src={image} alt="Shoes" className="w-720 h-52" /></figure>
   <div className="card-body">
     <h2 className="card-title">

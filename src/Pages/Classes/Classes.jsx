@@ -8,9 +8,9 @@ const Classes = () => {
     const[allClasses] = UseClass();
    
     return (
-        <div className='my-8'>
+        <div className='pt-24 mb-8'>
             <div className='mb-8'>
-                <h1 className='text-4xl text-center font-bold text-color my-4'>Our Popular Classes</h1>
+                <h1 className='text-4xl text-center font-bold text-color mb-4'>Our Popular Classes</h1>
             </div>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 gap-x-4 mx-4'>
                 {
