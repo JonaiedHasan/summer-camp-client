@@ -19,7 +19,7 @@ const ManageUsers = () => {
     // const { data: users = [], refetch } = useQuery({
     //     queryKey: ['users'],
     //     queryFn: async () => {
-    //         const res = await fetch('http://localhost:5000/users')
+    //         const res = await fetch('https://summer-camp-school-server-gamma.vercel.app/users')
     //         return res.json()
     //     }
 
@@ -28,7 +28,7 @@ const ManageUsers = () => {
 
     const handleMakeAdmin = user => {
         console.log(user);
-        fetch(`http://localhost:5000/users/admin/${user._id}`, {
+        fetch(`https://summer-camp-school-server-gamma.vercel.app/users/admin/${user._id}`, {
             method: 'PATCH'
         })
             .then(res => res.json())
@@ -48,7 +48,7 @@ const ManageUsers = () => {
     }
     const handleMakeInstructor = user => {
         console.log(user);
-        fetch(`http://localhost:5000/users/admin/${user._id}`, {
+        fetch(`https://summer-camp-school-server-gamma.vercel.app/users/admin/${user._id}`, {
             method: 'PUT'
         })
             .then(res => res.json())
@@ -80,7 +80,7 @@ const ManageUsers = () => {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
             if (result.isConfirmed) {
-               fetch(`http://localhost:5000/users/admin/${user._id}`,{
+               fetch(`https://summer-camp-school-server-gamma.vercel.app/users/admin/${user._id}`,{
                 method: 'DELETE'
                })
                .then(res => res.json())

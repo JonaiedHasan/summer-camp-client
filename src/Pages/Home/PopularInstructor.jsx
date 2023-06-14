@@ -5,7 +5,7 @@ import PopularInstructorCard from './PopularInstructorCard';
 const PopularInstructor = () => {
     const [instructor, setInstructor] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/instructors')
+        fetch('https://summer-camp-school-server-gamma.vercel.app/instructors')
             .then(res => res.json())
             .then(data => {
                 data.sort((a, b) => b.totalStudents - a.totalStudents);
