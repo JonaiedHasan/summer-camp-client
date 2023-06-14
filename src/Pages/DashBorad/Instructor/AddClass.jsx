@@ -13,10 +13,7 @@ const AddClass = () => {
     const { register, handleSubmit, reset } = useForm();
     const img_hosting_url = `https://api.imgbb.com/1/upload?key=${img_hosting_token}`
 
- console.log(user.email);
     const onSubmit = data => {
-    
-        console.log(data);
         const formData = new FormData();
         formData.append('image', data.image[0])
 
@@ -34,10 +31,9 @@ const AddClass = () => {
                 const newItem = {name, price: parseFloat(price), 
                     instructorName, 
                     availableSeats,email, image:imgURL,status:'Pending'};
-                console.log(newItem);
+             
                 axiosSecure.post('/classes', newItem)
                 .then(data => {
-                    console.log('after posting new menu item', data.data)
                     if(data.data.insertedId){
                         reset();
                         Swal.fire({

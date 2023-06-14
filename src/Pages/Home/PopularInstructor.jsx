@@ -12,7 +12,6 @@ const PopularInstructor = () => {
                 setInstructor(data)
             })
     }, [])
-    console.log(instructor);
     return (
         <div className='my-10'>
         <div>

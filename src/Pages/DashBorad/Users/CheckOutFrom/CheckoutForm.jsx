@@ -10,7 +10,6 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 
 const CheckoutForm = ({ item, closeModal }) =>  {
-  // console.log(item);
   const navigate = useNavigate();
   const stripe = useStripe();
   const elements = useElements();
@@ -54,7 +53,6 @@ const CheckoutForm = ({ item, closeModal }) =>  {
       setCardError(error.message);
     } else {
       setCardError("");
-      // console.log('payment method', paymentMethod)
     }
 
     setProcessing(true);
@@ -74,7 +72,6 @@ const CheckoutForm = ({ item, closeModal }) =>  {
       setCardError(confirmError.message);
     }
 
-    console.log("payment intent", paymentIntent);
 
     if (paymentIntent.status === "succeeded") {
       // save payment information to the server

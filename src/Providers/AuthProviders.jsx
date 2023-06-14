@@ -53,7 +53,6 @@ const googleSignIn = () =>{
             if (currentUser) {
                 axios.post('https://summer-camp-school-server-gamma.vercel.app/jwt',{email: currentUser.email})
                 .then(data => {
-                    console.log( data.data.token);
                     localStorage.setItem('access-token', data.data.token)
                 })
             }

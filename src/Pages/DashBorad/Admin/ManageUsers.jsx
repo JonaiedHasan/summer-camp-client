@@ -16,24 +16,13 @@ const ManageUsers = () => {
         return res.data;
     })
 
-    // const { data: users = [], refetch } = useQuery({
-    //     queryKey: ['users'],
-    //     queryFn: async () => {
-    //         const res = await fetch('https://summer-camp-school-server-gamma.vercel.app/users')
-    //         return res.json()
-    //     }
-
-    // })
-    console.log(users);
 
     const handleMakeAdmin = user => {
-        console.log(user);
         fetch(`https://summer-camp-school-server-gamma.vercel.app/users/admin/${user._id}`, {
             method: 'PATCH'
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (data.modifiedCount) {
                     refetch();
                     Swal.fire({
@@ -47,13 +36,11 @@ const ManageUsers = () => {
             })
     }
     const handleMakeInstructor = user => {
-        console.log(user);
         fetch(`https://summer-camp-school-server-gamma.vercel.app/users/admin/${user._id}`, {
             method: 'PUT'
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (data.modifiedCount) {
                     refetch();
                     Swal.fire({
@@ -69,7 +56,6 @@ const ManageUsers = () => {
 
     
     const handleDelete = user =>{
-        console.log(user);
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -85,7 +71,6 @@ const ManageUsers = () => {
                })
                .then(res => res.json())
                .then(data => {
-                console.log(data);
                 if(data.deletedCount
                     > 0){
                   refetch();

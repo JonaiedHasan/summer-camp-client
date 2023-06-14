@@ -12,13 +12,11 @@ const AllUsers = () => {
     })
 
     const handleMakeAdmin = user => {
-        console.log(user);
         fetch(`https://summer-camp-school-server-gamma.vercel.app/users/admin/${user._id}`, {
             method: 'PATCH'
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (data.modifiedCount) {
                     refetch();
                     Swal.fire({

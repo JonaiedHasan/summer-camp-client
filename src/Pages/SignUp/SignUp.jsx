@@ -18,11 +18,9 @@ const SignUp = () => {
     const navigate = useNavigate();
 
     const onSubmit = data => {
-        console.log(data)
         createUser(data.email, data.password)
             .then(result => {
                 const loggedUser = result.user;
-                console.log(loggedUser);
                 updateUserProfile(data.name, data.photoURL)
                     .then(() => {
                         const saveUser = { name: data.name, email: data.email }
@@ -35,7 +33,6 @@ const SignUp = () => {
                         })
                             .then(res => res.json())
                             .then(data => {
-                                console.log(data);
                                 if (data.insertedId) {
                                     reset();
                                     Swal.fire({
@@ -52,7 +49,6 @@ const SignUp = () => {
     };
 
 
-    console.log(watch("example"));
 
     return (
         <>

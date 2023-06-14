@@ -15,7 +15,7 @@ const MySelectedClass = () => {
         setModal(false)
     }
     const handleDelete = item => {
-        console.log(item);
+       
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -31,7 +31,7 @@ const MySelectedClass = () => {
                 })
                     .then(res => res.json())
                     .then(data => {
-                        console.log(data);
+                     
                         if (data.deletedCount
                             > 0) {
                             refetch();

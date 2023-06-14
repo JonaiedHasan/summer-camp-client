@@ -5,7 +5,7 @@ import useInstructorsClass from '../../../Hooks/useInstructorsClass';
 const MyClasses = () => {
    
     const  [InstructorClass, refetch] = useInstructorsClass();
-    console.log(InstructorClass);
+ 
 
     return (
 

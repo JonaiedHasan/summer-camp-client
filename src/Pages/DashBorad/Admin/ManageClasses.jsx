@@ -6,17 +6,14 @@ import Swal from 'sweetalert2';
 
 const ManageClasses = () => {
     const[allClasses,,refetch] = UseClass();
-    console.log(allClasses);
     const [btnDisabled, setBtnDisabled] = useState({})
 
      const handleApprove = item =>{
-        console.log(item);
         fetch(`https://summer-camp-school-server-gamma.vercel.app/classes/${item._id}`, {
             method: 'PUT'
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (data.modifiedCount) {
                     refetch();
                     Swal.fire({
@@ -35,13 +32,11 @@ const ManageClasses = () => {
             })
      }
      const handleDeny = item =>{
-        console.log(item);
         fetch(`https://summer-camp-school-server-gamma.vercel.app/classes/${item._id}`, {
             method: 'PATCH'
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (data.modifiedCount) {
                     refetch();
                     Swal.fire({

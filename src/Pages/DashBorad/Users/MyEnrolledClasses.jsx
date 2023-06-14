@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 
 const MyEnrolledClasses = () => {
    const [enrolledClass, refetch] = useEnrolledClass();
-   console.log(enrolledClass);
+  
     return (
         <div className='w-full'>
         <Helmet>
