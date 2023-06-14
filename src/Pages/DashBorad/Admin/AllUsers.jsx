@@ -37,7 +37,7 @@ const AllUsers = () => {
     return (
         <div>
         <Helmet>
-            <title>Elit | All Users </title>
+            <title>Playmakers Academy | All Users </title>
         </Helmet>
         <h3 className="text-3xl font-semibold">Total Users:{users.length}</h3>
         <div className="overflow-x-auto w-full">

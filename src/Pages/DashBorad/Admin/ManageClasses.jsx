@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import UseClass from '../../../Hooks/UseClass';
 import { FaTrashAlt } from 'react-icons/fa';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet';
 
 const ManageClasses = () => {
     const[allClasses,,refetch] = UseClass();
@@ -56,7 +57,11 @@ const ManageClasses = () => {
      }
 
     return (
+        
          <div className="w-full">
+             <Helmet>
+            <title>Playmakers Academy | Manage Classes </title>
+        </Helmet>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
                     {/* head */}

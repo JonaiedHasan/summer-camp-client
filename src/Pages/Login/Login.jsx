@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useContext, useEffect,  useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -14,14 +14,14 @@ const Login = () => {
 
     const [disabled, setDisabled] = useState(true)
 
-    const {  signIn } = useContext(AuthContext);
+    const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
 
 
 
-    
+
 
     const handleLogin = event => {
         event.preventDefault();
@@ -35,20 +35,20 @@ const Login = () => {
                     icon: 'success',
                     title: 'Login Successfully',
                     // text: 'Something went wrong!',
-                    
+
                 });
-                navigate( from , {replace : true});
+                navigate(from, { replace: true });
             })
     }
 
 
- 
+
 
 
     return (
         <>
             <Helmet>
-                <title>Bistro Boss | Login </title>
+                <title>Playmakers Academy | Login </title>
             </Helmet>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row">
@@ -71,7 +71,7 @@ const Login = () => {
                                 <input type="password" name='password' placeholder="password" className="input input-bordered" />
                             </div>
 
-                            
+
                             <div className="form-control mt-6">
                                 <input disabled={false} className="btn btn-primary" type="submit" value="Login" />
                             </div>

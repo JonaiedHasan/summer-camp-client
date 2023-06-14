@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import useInstructorsClass from '../../../Hooks/useInstructorsClass';
+import { Helmet } from 'react-helmet';
 
 const MyClasses = () => {
    
@@ -10,6 +11,9 @@ const MyClasses = () => {
     return (
 
         <div className="w-full">
+             <Helmet>
+            <title>Playmakers Academy | My Classes</title>
+        </Helmet>
         <div className="overflow-x-auto w-full">
             <table className="table w-full">
                 {/* head */}

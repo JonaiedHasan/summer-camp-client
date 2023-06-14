@@ -89,9 +89,9 @@ const ManageUsers = () => {
 
     return (
         <div className='w-full'>
-            <Helmet>
-                <title>Elit | All Users </title>
-            </Helmet>
+             <Helmet>
+            <title>Playmakers Academy | Manage Users </title>
+        </Helmet>
             <h3 className="text-3xl font-semibold">Total Users:{users.length}</h3>
             <div className="overflow-x-auto w-full">
                 <table className="table table-zebra my-4">

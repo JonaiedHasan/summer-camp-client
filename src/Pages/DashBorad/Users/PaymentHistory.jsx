@@ -8,7 +8,7 @@ const PaymentHistory = () => {
     return (
         <div className='w-full'>
         <Helmet>
-            <title>Sports || My Selected Class</title>
+            <title>Playmakers Academy | Payment History </title>
         </Helmet>
         <div className="overflow-x-auto">
             <table className="table">

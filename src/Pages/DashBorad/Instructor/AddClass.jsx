@@ -4,6 +4,7 @@ import Swal from 'sweetalert2';
 import useAxiosSecure from '../../../Hooks/UseAxiosSecure';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../../Providers/AuthProviders';
+import { Helmet } from 'react-helmet';
 const img_hosting_token = import.meta.env. VITE_Image_Upload_Token;
 
 const AddClass = () => {
@@ -52,6 +53,9 @@ const AddClass = () => {
     
     return (
         <div className="w-full px-10 mb-20">
+             <Helmet>
+            <title>Playmakers Academy | Add Class </title>
+        </Helmet>
              <div>
                 <h1 className='text-5xl text-center font-bold text-color my-10'>Add A Class</h1>
             </div>

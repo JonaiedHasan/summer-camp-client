@@ -53,9 +53,9 @@ const MySelectedClass = () => {
     }
     return (
         <div className='w-full'>
-            <Helmet>
-                <title>Sports || My Selected Class</title>
-            </Helmet>
+             <Helmet>
+            <title>Playmakers Academy | Ny Selected Classes </title>
+        </Helmet>
             <div className='text-5xl my-8 font-semibold text-color  flex justify-evenly items-center'>
                 <h3 className='text-3xl'>My Selected Classes</h3>
 

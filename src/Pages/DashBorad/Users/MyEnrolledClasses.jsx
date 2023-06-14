@@ -9,7 +9,7 @@ const MyEnrolledClasses = () => {
     return (
         <div className='w-full'>
         <Helmet>
-            <title>Sports || My Selected Class</title>
+            <title>Playmakers Academy | My Selected Classes </title>
         </Helmet>
         <div className="overflow-x-auto">
             <table className="table">
