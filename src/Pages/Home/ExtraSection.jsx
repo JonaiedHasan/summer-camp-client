@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const ExtraSection = () => {
     return (
-        <section className="bg-gray-100 py-8">
+        <section className="py-8">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-4">Fitness Tips for Beginners</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

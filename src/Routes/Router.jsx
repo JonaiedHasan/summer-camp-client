@@ -14,6 +14,9 @@ import AddClass from "../Pages/DashBorad/Instructor/AddClass";
 import MyClasses from "../Pages/DashBorad/Instructor/MyClasses";
 import ManageUsers from "../Pages/DashBorad/Admin/ManageUsers";
 import ManageClasses from "../Pages/DashBorad/Admin/ManageClasses";
+import ErrorPage from "../Shared/ErrorPage";
+import MyEnrolledClasses from "../Pages/DashBorad/Users/MyEnrolledClasses";
+import PaymentHistory from "../Pages/DashBorad/Users/PaymentHistory";
 
 
 
@@ -21,6 +24,7 @@ import ManageClasses from "../Pages/DashBorad/Admin/ManageClasses";
     {
       path: "/",
       element:<Main></Main>,
+      errorElement:<ErrorPage></ErrorPage>,
       children:[
         {
             path:'/',
@@ -46,6 +50,7 @@ import ManageClasses from "../Pages/DashBorad/Admin/ManageClasses";
     {
       path:'dashboard',
       element:<PrivateRouter><DashBoard></DashBoard></PrivateRouter>,
+      errorElement:<ErrorPage></ErrorPage>,
       children:[
         {
           path:'selectedClass',
@@ -66,6 +71,14 @@ import ManageClasses from "../Pages/DashBorad/Admin/ManageClasses";
         {
           path:'myClasses',
           element:<MyClasses></MyClasses>
+        },
+        {
+          path:'myEnrolledClasses',
+          element:<MyEnrolledClasses></MyEnrolledClasses>
+        },
+        {
+            path:'paymentHistory',
+            element:<PaymentHistory></PaymentHistory>
         }
       ]
     }
