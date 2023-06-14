@@ -55,38 +55,6 @@ const DashBoard = () => {
                         </div>
                     </div>
 
-
-               
-
-                 
-
-                    {/* {
-                    isAdmin ? <>
-                    
-                    </> : <>
-                    isInstructor ? <>
-                    
-                    </> : <>
-                    
-                    </></>
-                 }   
-                 {
-      isAdmin ? <> </> : isInstructor ? <> </> : <></>
-                 }    */}
-
-
-                    {/* {
-                    if (isAdmin) {
-                        
-                    }
-                    if (isInstructor) {
-                        
-                    }
-                    else{
-
-                    }
-                } */}
-
                     {
                         isAdmin ? <>
                             <li><NavLink to='/dashboard/manageClasses'>Manage Classes</NavLink></li>
