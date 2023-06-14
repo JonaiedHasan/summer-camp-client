@@ -56,13 +56,7 @@ const DashBoard = () => {
                     </div>
 
 
-                    {/* {
-
-                   if (isUser === 'admin') {
-                        <li><NavLink to='/dashboard/home'>  <FaHome></FaHome>Admin Home</NavLink></li>
-                    }
-
-          } */}
+               
 
                     {/* {
                 isAdmin ?( <></>) : (isInstructor ? (<></>) : (<></>))
