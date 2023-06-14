@@ -70,22 +70,7 @@ const DashBoard = () => {
                     }
 
 
-                    {/* {
-                        isAdmin ? <>
-
-                            <li><NavLink to='/dashboard/manageclass'>Manage Classes</NavLink></li>
-                            <li><NavLink to='/dashboard/manageUser'>Manage Users</NavLink></li>
-                        </> : <>
-                            <li><NavLink to='/dashboard/selectedClass'>  <FaCalendarAlt></FaCalendarAlt> My Selected Classes</NavLink></li>
-                            <li><NavLink to='/dashboard/home'>  <FaShoppingCart></FaShoppingCart>My Enrolled Classes</NavLink></li>
-                            <li><NavLink to='/dashboard/history'>  <FaWallet></FaWallet> Payment History</NavLink></li>
-
-
-
-                        </>
-                    } */}
-
-
+                 
                     <div className="divider"></div>
                     <li><NavLink to='/'><FaHome></FaHome>Home</NavLink> </li>
                     <li><NavLink to='/instructors'>Instructors</NavLink></li>
