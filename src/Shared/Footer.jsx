@@ -4,10 +4,10 @@ import { FaFootballBall } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-base-content text-white mb-0">
+        <footer className="footer p-10 bg-slate-700 text-white mb-0">
             <div className='w-52'>
-                <img className='rounded-full' src={'https://i.ibb.co/wrdFJ6j/Cplsdjapture.png'} alt="" />
-                <p className='font-semibold text-gray-600'>Dreamland Dolls Ltd.<br />
+                <img className='rounded-full' src={'https://i.ibb.co/ZhDP0qm/playmark-logo-final.png'} alt="" />
+                <p className='font-semibold text-gray-300'>Playmakers Academy<br />
                 Mirpur , Dhaka ,Bangladesh
                 </p>
             </div>

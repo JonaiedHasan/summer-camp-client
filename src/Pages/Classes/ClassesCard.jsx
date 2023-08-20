@@ -15,7 +15,7 @@ const ClassesCard = ({ item }) => {
     const handleSelectCard= item =>{
         if(user && user?.email){
             const orderItem = {classId: _id, image, name, price, availableSeats, instructorName, email:user?.email};
-            fetch('https://summer-camp-school-server-gamma.vercel.app/selectedClass',{
+            fetch('http://localhost:5000/selectedClass',{
                 method:'POST',
                 headers:{
                     'content-type':'application/json'

@@ -1,12 +1,15 @@
 /* eslint-disable no-unused-vars */
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { FaFootballBall } from 'react-icons/fa';
 
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../Providers/AuthProviders';
 import useAdmin from '../Hooks/useAdmin';
 import useInstructor from '../Hooks/useInstructor';
+import DarkModeToggle from "react-dark-mode-toggle";
+import ChangeTheme from '../ChangeTheme';
 const Navbar = () => {
+    const [isDarkMode, setIsDarkMode] = useState(() => false);
 
     const { user, logOut } = useContext(AuthContext);
     const handleLogOut = () => {
@@ -77,33 +80,33 @@ const Navbar = () => {
                                     Classes
                                 </NavLink>
                             </li>
-                           
-                        {
-                             isAdmin ? <>
-                             <li><NavLink  className={({ isActive }) =>
-                                    isActive ? "active" : "default"
-                                } to='/dashboard/manageClasses'>DashBoard</NavLink></li>
-                         </> : isInstructor ? <>
-                             <li><NavLink  className={({ isActive }) =>
-                                    isActive ? "active" : "default"
-                                } to='/dashboard/myClasses'>Dash Board</NavLink></li>
-                         </> : <>
-                             <li><NavLink  className={({ isActive }) =>
-                                    isActive ? "active" : "default"
-                                } to='/dashboard/selectedClass'>Dash Board</NavLink></li>
-                         </>
-                           }
+
+                            {
+                                isAdmin ? <>
+                                    <li><NavLink className={({ isActive }) =>
+                                        isActive ? "active" : "default"
+                                    } to='/dashboard/manageClasses'>DashBoard</NavLink></li>
+                                </> : isInstructor ? <>
+                                    <li><NavLink className={({ isActive }) =>
+                                        isActive ? "active" : "default"
+                                    } to='/dashboard/myClasses'>Dash Board</NavLink></li>
+                                </> : <>
+                                    <li><NavLink className={({ isActive }) =>
+                                        isActive ? "active" : "default"
+                                    } to='/dashboard/selectedClass'>Dash Board</NavLink></li>
+                                </>
+                            }
 
                         </ul>
                     </div>
                     <Link to="/" className="btn btn-ghost normal-case text-2xl">
-                        <div className='w-24 flex items-center justify-center'>
-                            
-                            <img className='rounded-full' src={'https://i.ibb.co/wrdFJ6j/Cplsdjapture.png'} alt="" />
+                        <div className='w-16 mt-0 flex items-center hover:animate-pulse transition-all justify-center'>
+
+                            <img className='rounded-full ' src={'https://i.ibb.co/ZhDP0qm/playmark-logo-final.png'} alt="" />
                         </div>
                         {" "}
 
-                       
+
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -143,22 +146,26 @@ const Navbar = () => {
                             isActive ? "active" : "default"
                         } to='/dashboard/manageClasses'>DashBoard</NavLink></li> */}
 
-                        {
-                             isAdmin ? <>
-                             <li><NavLink  className={({ isActive }) =>
+                      {
+                        user && <>
+                          {
+                            isAdmin ? <>
+                                <li><NavLink className={({ isActive }) =>
                                     isActive ? "active" : "default"
                                 } to='/dashboard/manageClasses'>DashBoard</NavLink></li>
-                         </> : isInstructor ? <>
-                             <li><NavLink  className={({ isActive }) =>
+                            </> : isInstructor ? <>
+                                <li><NavLink className={({ isActive }) =>
                                     isActive ? "active" : "default"
                                 } to='/dashboard/myClasses'>Dash Board</NavLink></li>
-                         </> : <>
-                             <li><NavLink  className={({ isActive }) =>
+                            </> : <>
+                                <li><NavLink className={({ isActive }) =>
                                     isActive ? "active" : "default"
                                 } to='/dashboard/selectedClass'>Dash Board</NavLink></li>
-                         </>
-                           }
-                    
+                            </>
+                        }
+                        </>
+                      }
+
 
                     </ul>
                 </div>
@@ -190,8 +197,12 @@ const Navbar = () => {
                             <NavLink to="/signup">
                                 <button className="btn-outlined">Sign Up</button>
                             </NavLink>
+                          
                         </>
                     )}
+                    <div>
+                        <ChangeTheme></ChangeTheme>
+                    </div>
                 </div>
             </div>
         </div>

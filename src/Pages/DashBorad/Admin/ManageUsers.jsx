@@ -18,7 +18,7 @@ const ManageUsers = () => {
 
 
     const handleMakeAdmin = user => {
-        fetch(`https://summer-camp-school-server-gamma.vercel.app/users/admin/${user._id}`, {
+        fetch(`http://localhost:5000/users/admin/${user._id}`, {
             method: 'PATCH'
         })
             .then(res => res.json())
@@ -36,7 +36,7 @@ const ManageUsers = () => {
             })
     }
     const handleMakeInstructor = user => {
-        fetch(`https://summer-camp-school-server-gamma.vercel.app/users/admin/${user._id}`, {
+        fetch(`http://localhost:5000/users/admin/${user._id}`, {
             method: 'PUT'
         })
             .then(res => res.json())
@@ -66,7 +66,7 @@ const ManageUsers = () => {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
             if (result.isConfirmed) {
-               fetch(`https://summer-camp-school-server-gamma.vercel.app/users/admin/${user._id}`,{
+               fetch(`http://localhost:5000/users/admin/${user._id}`,{
                 method: 'DELETE'
                })
                .then(res => res.json())
@@ -92,7 +92,7 @@ const ManageUsers = () => {
              <Helmet>
             <title>Playmakers Academy | Manage Users </title>
         </Helmet>
-            <h3 className="text-3xl font-semibold">Total Users:{users.length}</h3>
+            <h3 className="text-3xl flex justify-center font-semibold">Total Users: {users.length}</h3>
             <div className="overflow-x-auto w-full">
                 <table className="table table-zebra my-4">
                     {/* head */}

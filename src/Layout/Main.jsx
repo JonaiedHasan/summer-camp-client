@@ -7,14 +7,32 @@ import {
     QueryClient,
     QueryClientProvider,
 } from '@tanstack/react-query'
-
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { BarLoader } from 'react-spinners';
 const Main = () => {
     const queryClient = new QueryClient()
 
     const location = useLocation();
-    const noHeaderFooter = location.pathname.includes('login' || 'signup')
+    const noHeaderFooter = location.pathname.includes('login' || 'signup');
+    const [loading, setLoading] = useState(false)
+    useEffect(() => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false)
+        }, 0)
+    }, [])
     return (
-        <div>
+
+        <>
+        {loading ? (
+            <div className='  mt-48 sm:mt-24'>
+                <img src="https://i.ibb.co/ZhDP0qm/playmark-logo-final.png" className='animate-pulse mx-auto' alt="" />
+                <div className='animate-bounce text-3xl text-slate-600 font-bold flex items-center justify-center pt-3 '><h1>Loading </h1><div><BarLoader color="#333CFF" size={90} /></div></div>
+                
+            </div>
+        ) : (
+            <div>
             <QueryClientProvider client={queryClient}>
                 <div>
                     {noHeaderFooter || <Navbar></Navbar>}
@@ -23,7 +41,11 @@ const Main = () => {
                 </div>
             </QueryClientProvider>
 
-        </div>
+        </div> 
+        )
+        }
+    </>
+        
     );
 };
 

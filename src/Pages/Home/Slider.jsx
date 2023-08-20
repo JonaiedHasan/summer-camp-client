@@ -4,8 +4,8 @@ import React from 'react';
 const Slider = () => {
     return (
         <div className="carousel w-full">
-            <div id="slide1" className="carousel-item relative w-full">
-                <div className="hero min-h-screen" style={{ backgroundImage: `url("https://st4.depositphotos.com/1229718/31058/i/450/depositphotos_310582104-stock-photo-sport-objects-on-black.jpg")` }}>
+            <div id="slide1" className="carousel-item relative w-full ">
+                <div className="hero min-h-screen" style={{ backgroundImage: `url("https://i.ibb.co/M5Gw90y/depositphotos-310582104-stock-photo-sport-objects-on-black.webp")` }}>
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-center text-neutral-content">
                         <div className="max-w-md">
@@ -25,7 +25,7 @@ const Slider = () => {
                 </div>
             </div>
             <div id="slide2" className="carousel-item relative w-full">
-                <div className="hero min-h-screen" style={{ backgroundImage: `url("https://media.istockphoto.com/id/677740658/video/cricket-batsman-on-the-stadium.jpg?s=640x640&k=20&c=0Lp_9PUe50zMMLpQ43Sg5UGuJlIkssxBx-2eG9q2bI4=")` }}>
+                <div className="hero min-h-screen" style={{ backgroundImage: `url("https://i.ibb.co/mRwXN3k/20210722-105617.jpg")` }}>
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-center text-neutral-content">
                         <div className="max-w-md">
@@ -65,7 +65,7 @@ const Slider = () => {
                 </div>
             </div>
             <div id="slide4" className="carousel-item relative w-full">
-                <div className="hero min-h-screen" style={{ backgroundImage: `url("https://cdn.wallpapersafari.com/94/84/fvUDy4.jpg")` }}>
+                <div className="hero min-h-screen" style={{ backgroundImage: `url("https://i.ibb.co/Ws8j9gb/fvUDy4.webp")` }}>
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-center text-neutral-content">
                         <div className="max-w-md">
