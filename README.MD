@@ -1,6 +1,6 @@
 # Playmakers Academy Website
 
-![Playmakers Academy Logo](https://i.ibb.co/wrdFJ6j/Cplsdjapture.png)
+![Playmakers Academy Logo](https://i.ibb.co/ZhDP0qm/playmark-logo-final.png)
 
 This is the client-side repository for the Playmakers Academy website. The website is designed to offer various sports classes for students to purchase. Instructors can add classes, and an admin will review and approve them before they are visible to regular users. The website aims to provide a platform for sports enthusiasts to explore and sign up for different classes.
 
@@ -24,6 +24,6 @@ This is the client-side repository for the Playmakers Academy website. The websi
 
 ## Live Site
 
-The live version of the Playmakers Academy website can be accessed at [https://elit-sports-academy.web.app](https://elit-sports-academy.web.app).
+The live version of the Playmakers Academy website can be accessed at [https://elit-sports-academy.web.app/](https://elit-sports-academy.web.app).
 
 Feel free to customize and expand upon this readme file based on the specific details and requirements of your project.
