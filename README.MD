@@ -24,6 +24,6 @@ This is the client-side repository for the Playmakers Academy website. The websi
 
 ## Live Site
 
-The live version of the Playmakers Academy website can be accessed at [https://elit-sports-academy.web.app](https://github.com/programming-hero-web-course1/b712-summer-camp-client-side-JonaiedHasan).
+The live version of the Playmakers Academy website can be accessed at [https://elit-sports-academy.web.app](https://elit-sports-academy.web.app).
 
 Feel free to customize and expand upon this readme file based on the specific details and requirements of your project.
