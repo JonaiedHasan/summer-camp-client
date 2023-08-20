@@ -22,7 +22,7 @@ const CheckoutForm = ({ item, closeModal }) =>  {
   useEffect(() => {
     if (item.price > 0) {
       axios
-        .post('http://localhost:5000/create-payment-intent', {
+        .post('https://summer-camp-school-server-gamma.vercel.app/create-payment-intent', {
           price: item.price,
         })
         .then((res) => {
@@ -89,7 +89,7 @@ const CheckoutForm = ({ item, closeModal }) =>  {
         orderStatus: "enrolled",
       };
 
-      fetch('http://localhost:5000/payment', {
+      fetch('https://summer-camp-school-server-gamma.vercel.app/payment', {
         method: "POST",
         headers: {
           "content-type": "application/json",

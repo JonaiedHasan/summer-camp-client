@@ -10,7 +10,7 @@ const ManageClasses = () => {
     const [btnDisabled, setBtnDisabled] = useState({})
 
      const handleApprove = item =>{
-        fetch(`http://localhost:5000/classes/${item._id}`, {
+        fetch(`https://summer-camp-school-server-gamma.vercel.app/classes/${item._id}`, {
             method: 'PUT'
         })
             .then(res => res.json())
@@ -33,7 +33,7 @@ const ManageClasses = () => {
             })
      }
      const handleDeny = item =>{
-        fetch(`http://localhost:5000/classes/${item._id}`, {
+        fetch(`https://summer-camp-school-server-gamma.vercel.app/classes/${item._id}`, {
             method: 'PATCH'
         })
             .then(res => res.json())

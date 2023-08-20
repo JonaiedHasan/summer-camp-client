@@ -20,7 +20,7 @@ const Main = () => {
         setLoading(true);
         setTimeout(() => {
             setLoading(false)
-        }, 0)
+        }, 3000)
     }, [])
     return (
 
